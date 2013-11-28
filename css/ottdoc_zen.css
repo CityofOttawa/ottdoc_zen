@@ -1,0 +1,673 @@
+/***************************/
+/********* Import **********/
+/***************************/
+/***************************/
+/******** SASS vars ********/
+/***************************/
+/***************************/
+/********* Element *********/
+/***************************/
+/* line 19, ../sass/ottdoc_zen.scss */
+html, body {
+  height: 100%;
+  background-color: #f3f4f4;
+}
+
+/* line 23, ../sass/ottdoc_zen.scss */
+body {
+  font-family: Helvetica;
+  font-size: 62.5%;
+  line-height: normal;
+}
+
+/* line 28, ../sass/ottdoc_zen.scss */
+p, ul, ol {
+  margin-top: 0;
+}
+
+/* line 31, ../sass/ottdoc_zen.scss */
+p, h1, h2, h3, h4, h5, h6 {
+  line-height: normal;
+}
+
+/* line 34, ../sass/ottdoc_zen.scss */
+h1, h2, h3 {
+  margin: 1em 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #00a893;
+}
+
+/* line 40, ../sass/ottdoc_zen.scss */
+a {
+  text-decoration: none;
+  color: #004292;
+  border-bottom: 1px solid transparent;
+}
+/* line 44, ../sass/ottdoc_zen.scss */
+a:hover, a:focus {
+  border-bottom: 1px dotted #004292;
+}
+
+/* line 48, ../sass/ottdoc_zen.scss */
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/***************************/
+/****** Font Awesome *******/
+/***************************/
+/* line 58, ../sass/ottdoc_zen.scss */
+.fa-comments-o {
+  font-size: 4em;
+  color: #7a7a7a;
+}
+
+/***************************/
+/********* Region **********/
+/***************************/
+/* line 66, ../sass/ottdoc_zen.scss */
+#page-top, #page {
+  background-color: #fff;
+}
+
+/* line 69, ../sass/ottdoc_zen.scss */
+#page-top {
+  margin-bottom: 28px;
+  width: 100%;
+}
+/* line 72, ../sass/ottdoc_zen.scss */
+#page-top .inside {
+  position: relative;
+  padding: 10px 0;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 79, ../sass/ottdoc_zen.scss */
+#page {
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 83, ../sass/ottdoc_zen.scss */
+.region-top {
+  height: 100%;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* line 88, ../sass/ottdoc_zen.scss */
+.region-top .block-menu ul.menu {
+  padding: 13px 0 0;
+}
+/* line 90, ../sass/ottdoc_zen.scss */
+.region-top .block-menu ul.menu li {
+  margin: 0 25px 0 0;
+  padding: 0 25px 0 0;
+}
+
+/* line 97, ../sass/ottdoc_zen.scss */
+#main {
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+/* line 101, ../sass/ottdoc_zen.scss */
+#content {
+  padding: 15px;
+  font-size: 1.3em;
+}
+
+/* line 105, ../sass/ottdoc_zen.scss */
+#footer {
+  padding: 0;
+}
+/* line 107, ../sass/ottdoc_zen.scss */
+#footer .footer-inside {
+  padding: 3px 0 8px;
+  font-size: 1.3em;
+  color: #fff;
+  background-color: #414141;
+  text-align: center;
+}
+/* line 113, ../sass/ottdoc_zen.scss */
+#footer .footer-inside p {
+  margin: 0;
+}
+/* line 116, ../sass/ottdoc_zen.scss */
+#footer .footer-inside a {
+  color: #fff;
+}
+/* line 118, ../sass/ottdoc_zen.scss */
+#footer .footer-inside a:hover, #footer .footer-inside a:focus {
+  border-color: #fff;
+}
+/* line 122, ../sass/ottdoc_zen.scss */
+#footer .footer-inside .block {
+  margin: 0 0 3px;
+}
+/* line 127, ../sass/ottdoc_zen.scss */
+#footer .footer-inside .block-menu ul.menu li {
+  margin: 0 5px 0 0;
+  padding: 0 8px 0 0;
+  line-height: 2em;
+  border-color: #fff;
+}
+/* line 132, ../sass/ottdoc_zen.scss */
+#footer .footer-inside .block-menu ul.menu li a {
+  color: #fff;
+}
+
+/***************************/
+/********** Panel **********/
+/***************************/
+/* line 144, ../sass/ottdoc_zen.scss */
+.page-panels #content {
+  padding: 0;
+}
+
+/* line 148, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-top, .panel-display .cityott-two-doc-bottom {
+  width: 100%;
+}
+
+/* line 153, ../sass/ottdoc_zen.scss */
+.cityott-two-doc-top .inside {
+  padding: 0;
+}
+/* line 156, ../sass/ottdoc_zen.scss */
+.cityott-two-doc-top .pane-ottdoc-companion-prev-page-link {
+  overflow: hidden;
+}
+
+/* line 161, ../sass/ottdoc_zen.scss */
+.cityott-two-doc-bottom .inside {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 168, ../sass/ottdoc_zen.scss */
+.panel-display .panel-panel .inside {
+  margin: 0;
+}
+/* line 172, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-upper {
+  margin: 40px 0 0;
+}
+/* line 176, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-right .pane-block {
+  margin-bottom: 1em;
+  padding: 10px;
+  color: #fff;
+  background-color: #004292;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 182, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-right .pane-block h2.pane-title {
+  margin-top: 0;
+  font-weight: normal;
+  color: #fff;
+}
+/* line 187, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-right .pane-block .block-field {
+  margin: 0 0 1em;
+}
+/* line 190, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-right .pane-block .button {
+  float: left;
+  display: block;
+  padding: 5px;
+  background-color: #fff;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 198, ../sass/ottdoc_zen.scss */
+.panel-display .cityott-two-doc-right .pane-block .button:hover, .panel-display .cityott-two-doc-right .pane-block .button:focus {
+  text-decoration: underline;
+}
+/* line 205, ../sass/ottdoc_zen.scss */
+.panel-display .pane-node-title h1 {
+  margin: 20px 0;
+  font-size: 2.8em;
+  font-weight: normal;
+}
+
+/***************************/
+/********** Beans **********/
+/***************************/
+/* line 216, ../sass/ottdoc_zen.scss */
+.bean-basic-bean {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+/* line 220, ../sass/ottdoc_zen.scss */
+.cityott-two-doc-bottom .pane-bean p {
+  margin-top: 0;
+}
+
+/* line 223, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-send-feedback {
+  padding: 0;
+  color: #7a7a7a;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 227, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-send-feedback .basic-bean-left {
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+/* line 232, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-send-feedback .basic-bean-right {
+  margin-left: 62px;
+  overflow: hidden;
+}
+/* line 236, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-send-feedback .feedback-button {
+  float: left;
+  display: block;
+  margin-top: -1em;
+  padding: 7px 30px;
+  text-align: center;
+  color: #fff;
+  background-color: #004292;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 245, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-send-feedback .feedback-button:hover, .panel-pane.pane-bean-send-feedback .feedback-button:focus {
+  text-decoration: underline;
+}
+
+/* line 250, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-in-my-neighbourhood {
+  padding: 0;
+  min-height: 82px;
+  color: #7a7a7a;
+  background: url("../images/youth-portal-footer-map.png") no-repeat 0 0;
+}
+/* line 255, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-in-my-neighbourhood a.container-link {
+  display: block;
+  padding-left: 121px;
+  color: #7a7a7a;
+  border: none;
+}
+/* line 261, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-in-my-neighbourhood h2.neighbourhood-title {
+  margin: 0 0 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #00a893;
+}
+/* line 266, ../sass/ottdoc_zen.scss */
+.panel-pane.pane-bean-in-my-neighbourhood h2.neighbourhood-title .underline {
+  padding: 0 0 5px;
+  border-bottom: 2px solid #004292;
+}
+
+/***************************/
+/********* Content *********/
+/***************************/
+/* line 276, ../sass/ottdoc_zen.scss */
+.block-menu {
+  padding: 0;
+}
+/* line 278, ../sass/ottdoc_zen.scss */
+.block-menu ul.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 281, ../sass/ottdoc_zen.scss */
+.block-menu ul.menu li {
+  display: inline;
+  list-style: none;
+  border-right: 1px solid #000;
+}
+/* line 285, ../sass/ottdoc_zen.scss */
+.block-menu ul.menu li.last {
+  margin-right: 0;
+  padding-right: 0;
+  border: none;
+}
+/* line 290, ../sass/ottdoc_zen.scss */
+.block-menu ul.menu li a {
+  color: #000;
+}
+/* line 292, ../sass/ottdoc_zen.scss */
+.block-menu ul.menu li a:hover, .block-menu ul.menu li a:focus {
+  border-color: #000;
+}
+
+/* line 299, ../sass/ottdoc_zen.scss */
+#top-logo {
+  height: 100%;
+  border: none;
+}
+
+/* line 303, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links {
+  padding-top: 4px;
+}
+/* line 305, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .inside {
+  float: right;
+}
+/* line 307, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .inside ul li a {
+  font-size: 0.85em;
+  color: #47545b;
+}
+/* line 310, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .inside ul li a:hover, #block-ottdoc-companion-lang-extra-links .inside ul li a:focus {
+  border-color: #47545b;
+}
+/* line 315, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-top-sub-menu {
+  float: left;
+}
+/* line 317, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-top-sub-menu ul.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 320, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-top-sub-menu ul.menu li {
+  display: inline;
+  margin: 0 15px 0 0;
+  padding: 0 15px 0 0;
+  border-right: 1px solid #666;
+  list-style: none;
+}
+/* line 329, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-lang-block {
+  float: left;
+}
+/* line 331, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-lang-block ul.language-switcher-locale-url {
+  margin: 0;
+  padding: 0;
+}
+/* line 334, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-lang-block ul.language-switcher-locale-url li {
+  display: inline;
+  list-style: none;
+}
+/* line 337, ../sass/ottdoc_zen.scss */
+#block-ottdoc-companion-lang-extra-links .block-field-lang-block ul.language-switcher-locale-url li.active {
+  display: none;
+}
+
+/* line 344, ../sass/ottdoc_zen.scss */
+.sticky-wrapper {
+  height: 55px;
+}
+/* line 346, ../sass/ottdoc_zen.scss */
+.sticky-wrapper .inside {
+  margin: 0;
+}
+
+/* line 350, ../sass/ottdoc_zen.scss */
+.block-field-prev-page-link a {
+  position: relative;
+  display: block;
+  margin: 0 0 0 15px;
+  padding: 0 10px 0 0;
+  height: 55px;
+  font-size: 1.5em;
+  line-height: 55px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #004292;
+  border: none;
+  -webkit-transition: background-color, 1s;
+  -moz-transition: background-color, 1s;
+  -o-transition: background-color, 1s;
+  transition: background-color, 1s;
+}
+/* line 364, ../sass/ottdoc_zen.scss */
+.block-field-prev-page-link a:after {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -28px;
+  content: " ";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-right-color: #004292;
+  border-width: 28px;
+  border-right-width: 15px;
+  pointer-events: none;
+  -webkit-transition: border-right-color, 1s;
+  -moz-transition: border-right-color, 1s;
+  -o-transition: border-right-color, 1s;
+  transition: border-right-color, 1s;
+}
+/* line 379, ../sass/ottdoc_zen.scss */
+.block-field-prev-page-link a:hover, .block-field-prev-page-link a:focus {
+  background-color: #002b5f;
+}
+/* line 381, ../sass/ottdoc_zen.scss */
+.block-field-prev-page-link a:hover:after, .block-field-prev-page-link a:focus:after {
+  border-right-color: #002b5f;
+}
+
+/* line 386, ../sass/ottdoc_zen.scss */
+#search-form {
+  position: relative;
+}
+/* line 388, ../sass/ottdoc_zen.scss */
+#search-form .custom_search-popup {
+  display: none;
+}
+/* line 391, ../sass/ottdoc_zen.scss */
+#search-form .form-item-custom-search-blocks-form-1 {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 9px 55px 9px 9px;
+  height: 55px;
+  background-color: #004292;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 399, ../sass/ottdoc_zen.scss */
+#search-form .form-item-custom-search-blocks-form-1 label {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: rect(1px 1px 1px 1px);
+  zoom: 1;
+}
+/* line 408, ../sass/ottdoc_zen.scss */
+#search-form .form-item-custom-search-blocks-form-1 input {
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5em;
+  line-height: normal;
+  color: #333;
+  background-color: #fff;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 420, ../sass/ottdoc_zen.scss */
+#search-form .form-actions {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  overflow: hidden;
+}
+/* line 426, ../sass/ottdoc_zen.scss */
+#search-form .form-actions input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  font-size: 0;
+  color: transparent;
+  text-align: right;
+  background-color: #004292;
+  background: url("../images/mag-glass.png") no-repeat center center;
+  border: none;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  -webkit-transition: background-color, 1s;
+  -moz-transition: background-color, 1s;
+  -o-transition: background-color, 1s;
+  transition: background-color, 1s;
+}
+/* line 442, ../sass/ottdoc_zen.scss */
+#search-form .form-actions input:hover, #search-form .form-actions input:focus {
+  background-color: #002b5f;
+}
+
+/* line 448, ../sass/ottdoc_zen.scss */
+#page-title {
+  margin: 1em 0;
+}
+
+/* line 451, ../sass/ottdoc_zen.scss */
+.field-name-body {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 457, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item {
+  margin: 0;
+  padding: 5px 10px;
+  line-height: 20px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 462, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item.even {
+  background-color: #dfedff;
+  background-color: rgba(0, 66, 146, 0.1);
+}
+/* line 466, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item.odd {
+  background-color: #f4fffe;
+  background-color: rgba(0, 168, 147, 0.1);
+}
+/* line 470, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item .custom-document-format {
+  float: left;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+/* line 474, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item .custom-document-format img {
+  vertical-align: top;
+}
+/* line 478, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item span {
+  white-space: nowrap;
+}
+/* line 481, ../sass/ottdoc_zen.scss */
+.field-name-field-document .field-item .file-accessible, .field-name-field-document .field-item .file-archived {
+  margin: 0 10px;
+  padding: 3px 8px;
+  font-size: 0.85em;
+  color: #fff;
+  background-color: #414141;
+  vertical-align: top;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 492, ../sass/ottdoc_zen.scss */
+.field-name-field-link-to-accessible-page {
+  float: left;
+  margin: 5px;
+}
+/* line 495, ../sass/ottdoc_zen.scss */
+.field-name-field-link-to-accessible-page .field-item {
+  padding: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 498, ../sass/ottdoc_zen.scss */
+.field-name-field-link-to-accessible-page .field-item a {
+  display: block;
+  padding: 5px;
+  line-height: 19px;
+  border: none;
+}
+/* line 503, ../sass/ottdoc_zen.scss */
+.field-name-field-link-to-accessible-page .field-item a:hover, .field-name-field-link-to-accessible-page .field-item a:focus {
+  text-decoration: underline;
+}
+
+/* line 509, ../sass/ottdoc_zen.scss */
+.footnotes {
+  margin: 20px 0;
+  font-size: 0.85em;
+  color: #595959;
+}
+
+/***************************/
+/********** Front **********/
+/***************************/
+/* line 519, ../sass/ottdoc_zen.scss */
+.front .field-name-body {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/***************************/
+/********** Admin **********/
+/***************************/
+/* line 530, ../sass/ottdoc_zen.scss */
+.contextual-links-wrapper a {
+  border-bottom: none;
+}
+/* line 532, ../sass/ottdoc_zen.scss */
+.contextual-links-wrapper a.contextual-links-trigger {
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* line 539, ../sass/ottdoc_zen.scss */
+.tabs a:hover, .tabs a:focus {
+  border-bottom: none;
+}
