@@ -1,0 +1,269 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+// We are going to create a fluid grid with 1, 3, or 5 columns and 20px gutters
+// between columns (applied as 10px of left/right padding on each column).
+$zen-column-count:  1;
+$zen-gutter-width:  30px;
+
+// If you need IE6/7 support for box-sizing: border-box (default), see _base.scss
+//$zen-box-sizing: content-box;
+
+// You can generate more efficient CSS if you manually apply the
+// zen-grid-item-base mixin to all grid items from within a single ruleset.
+$zen-auto-include-item-base: false;
+// $zen-auto-include-flow-item-base: false;
+
+// Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
+@if $zen-reverse-all-floats == false {
+
+/**
+ * Center the page.
+ *
+ * For screen sizes larger than 1200px, prevent excessively long lines of text
+ * by setting a max-width.
+ */
+#page-top .inside,
+#page,
+.cityott-two-doc-top,
+.cityott-two-doc-upper,
+.cityott-two-doc-bottom,
+.region-bottom {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1180px;
+}
+
+/* Apply the shared properties of grid items in a single, efficient ruleset. */
+.block-menu,
+#block-ottdoc-companion-lang-extra-links,
+.region-top,
+#top-logo,
+#header,
+#content,
+#content .center-wrapper,
+#navigation,
+#search-form,
+.cityott-two-doc-top > .inside,
+.cityott-two-doc-upper > .inside,
+.cityott-two-doc-bottom > .inside,
+.cityott-two-doc-bottom .panel-pane,
+#footer {
+  @include zen-grid-item-base();
+}
+
+/* Containers for grid items and flow items. */
+#page-top,
+#header,
+#main,
+.cityott-two-doc-top,
+.cityott-two-doc-top .pane-ottdoc-companion-ott-gsa-search,
+.center-wrapper,
+.cityott-two-doc-bottom,
+#footer {
+  @include zen-grid-container();
+}
+.center-wrapper .panel-panel {
+  padding: 0;
+}
+#search-form {
+  padding: 0 0 0 2px;
+}
+
+/* Navigation bar */
+@media all and (min-width: 322px) {
+  #main {
+    position: relative;
+  }
+  #navigation {
+    /* Move the navbar up inside #main's padding. */
+    position: absolute;
+    top: 0;
+    height: $nav-height;
+    width: $zen-grid-width;
+  }
+}
+
+} // End of @if $zen-reverse-all-floats == true
+
+// Any screen under 322px wide.
+@media all and (max-width: 322px) {
+  $zen-column-count: 1;
+
+  #header {
+    display: none;
+  }
+  .pane-ottdoc-companion-prev-page-link {
+    float: none;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 0;
+  }
+  .sticky-wrapper {
+    height: auto !important;
+  }
+  .panel-display .cityott-two-doc-upper {
+    margin: 30px 0 0 !important;
+  }
+
+  #top-logo {
+    text-align: center;
+    @include zen-grid-item(1, 1);
+  }
+  .region-top {
+    @include zen-grid-item(1, 1);
+    @include zen-clear();
+  }
+  #block-ottdoc-companion-lang-extra-links {
+    @include zen-grid-item(1, 1);
+  }
+  #search-form {
+    @include zen-grid-item(1, 1);
+  }
+  .center-wrapper {
+    .cityott-two-doc-left {
+      @include zen-grid-item(1, 1);
+    }
+    .cityott-two-doc-right {
+      @include zen-grid-item(1, 1);
+      @include zen-clear();
+      .pane-block {
+        @include zen-grid-item-base();
+        @include zen-grid-item(1, 1);
+        @include zen-clear();
+      }
+    }
+  }
+}
+
+// Any screen between 323px and 800px wide.
+@media all and (min-width: 323px) and (max-width: 800px) {
+  $zen-column-count: 8;
+
+  #top-logo {
+    @include zen-grid-item(3, 1);
+  }
+  .region-top {
+    @include zen-grid-item(5, 4);
+  }
+  #block-menu-menu-top-menu {
+    @include zen-grid-item(0, 1);
+  }
+  #block-ottdoc-companion-lang-extra-links {
+    @include zen-grid-item(8, 1);
+  }
+  #search-form {
+    @include zen-grid-item(8, 1);
+  }
+  .center-wrapper {
+    .cityott-two-doc-left {
+      @include zen-grid-item(8, 1);
+    }
+    .cityott-two-doc-right {
+      @include zen-grid-item(8, 1);
+      @include zen-clear();
+      .pane-block {
+        @include zen-grid-item-base();
+      }
+      .pane-block.odd {
+        border-right: 5px solid #fff;
+        @include zen-grid-item(4, 1);
+      }
+      .pane-block.even {
+        border-left: 5px solid #fff;
+        @include zen-grid-item(4, 5);
+      }
+    }
+  }
+}
+
+// Any screen under 600px wide.
+@media all and (max-width: 600px) {
+  .pane-ottdoc-companion-prev-page-link {
+    float: left;
+    margin: 0 -70px 0 0;
+    width: 70px;
+  }
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 70px;
+  }
+}
+
+// Any screen under 800px wide.
+@media all and (max-width: 800px) {
+  #block-menu-menu-top-menu {
+    display: none;
+  }
+  .pane-ottdoc-companion-prev-page-link {
+    float: left;
+    margin: 0 -165px 0 0;
+    width: 165px;
+  }
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 165px;
+  }
+  .sticky-wrapper .cityott-two-doc-top {
+    position: static !important;
+  }
+}
+
+// Any screen over 801px wide.
+@media all and (min-width: 801px) {
+  $zen-column-count: 16;
+
+  .pane-ottdoc-companion-prev-page-link {
+    float: left;
+    margin: 0 -205px 0 0;
+    width: 205px;
+  }
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 205px;
+  }
+
+  #top-logo {
+    @include zen-grid-item(3, 1);
+  }
+  .region-top {
+    @include zen-grid-item(13, 4);
+  }
+  #block-menu-menu-top-menu {
+    @include zen-grid-item(12, 1);
+  }
+  #block-ottdoc-companion-lang-extra-links {
+    @include zen-grid-item(4, 13);
+  }
+  #search-form {
+    @include zen-grid-item(16, 1);
+  }
+  .center-wrapper {
+    .panel-panel {
+      @include zen-grid-item-base();
+    }
+    .cityott-two-doc-left {
+      padding-left: 0;
+      @include zen-grid-item(12, 1);
+    }
+    .cityott-two-doc-right {
+      padding-right: 0;
+      @include zen-grid-item(4, 13);
+    }
+  }
+  .cityott-two-doc-bottom {
+    .pane-block.left {
+      float: left;
+    }
+    .pane-block.right {
+      float: right;
+      width: 287px;
+    }
+  }
+}
