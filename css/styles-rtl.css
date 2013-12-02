@@ -1,69 +1,498 @@
-/*
-Syntax error: Invalid CSS after "}": expected "}", was "<<<<<<< HEAD"
-        on line 73 of /Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/layouts/_responsive.scss
-        from line 10 of /Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/layouts/_responsive-rtl.scss
-        from line 13 of /Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/styles-rtl.scss
+/**
+ * @file
+ * RTL companion for the styles.scss file.
+ */
+/* Import Sass mixins, variables, Compass modules, etc. */
+/* HTML element (SMACSS base) rules */
+/**
+ * @file
+ * Normalize-rtl.scss is the RTL language extension of normalize.scss
+ */
+/**
+ * Lists
+ */
+/* line 9, ../sass/_normalize-rtl.scss */
+dd {
+  margin: 0 30px 0 0;
+}
 
-Backtrace:
-/Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/layouts/_responsive.scss:73
-/Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/layouts/_responsive-rtl.scss:10
-/Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/styles-rtl.scss:13
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1146:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1084:in `expected'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1079:in `tok!'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:535:in `block'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:264:in `if_directive'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:174:in `special_directive'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:146:in `directive'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:552:in `block_child'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:545:in `block_contents'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:82:in `stylesheet'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:27:in `parse'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:342:in `_to_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:274:in `to_tree'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:53:in `map'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:315:in `_render'
-/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:262:in `render'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:126:in `timed'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:139:in `block in compile'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/logger.rb:45:in `red'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:138:in `compile'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:118:in `compile_if_required'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:101:in `each'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:101:in `block in run'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:126:in `timed'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/compiler.rb:100:in `run'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/commands/update_project.rb:45:in `perform'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/commands/base.rb:18:in `execute'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/commands/project_base.rb:19:in `execute'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/compass:44:in `block in <main>'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/compass:58:in `call'
-/Applications/CodeKit.app/Contents/Resources/engines/compass/bin/compass:58:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"}\": expected \"}\", was \"<<<<<<< HEAD\"\A         on line 73 of /Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/layouts/_responsive.scss\A         from line 10 of /Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/layouts/_responsive-rtl.scss\A         from line 13 of /Applications/XAMPP/xamppfiles/htdocs/ott/sites/all/themes/ottdoc_zen/sass/styles-rtl.scss"; }
+/* Address paddings set differently in IE 6/7. */
+/* line 16, ../sass/_normalize-rtl.scss */
+menu,
+ol,
+ul {
+  padding: 0 30px 0 0;
+}
+
+/* Layout rules */
+/**
+ * @file
+ * RTL companion for the layout-responsive.css file.
+ */
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+@media all and (max-width: 322px) {
+  /* line 100, ../sass/layouts/_responsive.scss */
+  #header {
+    display: none;
+  }
+
+  /* line 103, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-prev-page-link {
+    float: none;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+
+  /* line 108, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 0;
+  }
+
+  /* line 111, ../sass/layouts/_responsive.scss */
+  .sticky-wrapper {
+    height: auto !important;
+  }
+
+  /* line 114, ../sass/layouts/_responsive.scss */
+  .panel-display .cityott-two-doc-upper {
+    margin: 30px 0 0 !important;
+  }
+
+  /* line 118, ../sass/layouts/_responsive.scss */
+  #top-logo {
+    text-align: center;
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+
+  /* line 122, ../sass/layouts/_responsive.scss */
+  .region-top {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    clear: right;
+  }
+
+  /* line 126, ../sass/layouts/_responsive.scss */
+  #block-ottdoc-companion-lang-extra-links {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+
+  /* line 129, ../sass/layouts/_responsive.scss */
+  #search-form {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+
+  /* line 133, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-left {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+  /* line 136, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    clear: right;
+  }
+  /* line 139, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right .pane-block {
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    clear: right;
+  }
+}
+@media all and (min-width: 323px) and (max-width: 800px) {
+  /* line 152, ../sass/layouts/_responsive.scss */
+  #top-logo {
+    float: right;
+    width: 37.5%;
+    margin-right: 0%;
+    margin-left: -37.5%;
+  }
+
+  /* line 155, ../sass/layouts/_responsive.scss */
+  .region-top {
+    float: right;
+    width: 62.5%;
+    margin-right: 37.5%;
+    margin-left: -100%;
+  }
+
+  /* line 158, ../sass/layouts/_responsive.scss */
+  #block-menu-menu-top-menu {
+    float: right;
+    width: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+
+  /* line 161, ../sass/layouts/_responsive.scss */
+  #block-ottdoc-companion-lang-extra-links {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+
+  /* line 164, ../sass/layouts/_responsive.scss */
+  #search-form {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+
+  /* line 168, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-left {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+  /* line 171, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    clear: right;
+  }
+  /* line 174, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right .pane-block {
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 177, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right .pane-block.odd {
+    border-right: 5px solid #fff;
+    float: right;
+    width: 50%;
+    margin-right: 0%;
+    margin-left: -50%;
+  }
+  /* line 181, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right .pane-block.even {
+    border-left: 5px solid #fff;
+    float: right;
+    width: 50%;
+    margin-right: 50%;
+    margin-left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+  /* line 191, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-prev-page-link {
+    float: left;
+    margin: 0 -70px 0 0;
+    width: 70px;
+  }
+
+  /* line 196, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 70px;
+  }
+}
+@media all and (max-width: 800px) {
+  /* line 203, ../sass/layouts/_responsive.scss */
+  #block-menu-menu-top-menu {
+    display: none;
+  }
+
+  /* line 206, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-prev-page-link {
+    float: left;
+    margin: 0 -165px 0 0;
+    width: 165px;
+  }
+
+  /* line 211, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 165px;
+  }
+
+  /* line 214, ../sass/layouts/_responsive.scss */
+  .sticky-wrapper .cityott-two-doc-top {
+    position: static !important;
+  }
+}
+@media all and (min-width: 801px) {
+  /* line 223, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-prev-page-link {
+    float: left;
+    margin: 0 -205px 0 0;
+    width: 205px;
+  }
+
+  /* line 228, ../sass/layouts/_responsive.scss */
+  .pane-ottdoc-companion-ott-gsa-search {
+    margin-left: 205px;
+  }
+
+  /* line 232, ../sass/layouts/_responsive.scss */
+  #top-logo {
+    float: right;
+    width: 18.75%;
+    margin-right: 0%;
+    margin-left: -18.75%;
+  }
+
+  /* line 235, ../sass/layouts/_responsive.scss */
+  .region-top {
+    float: right;
+    width: 81.25%;
+    margin-right: 18.75%;
+    margin-left: -100%;
+  }
+
+  /* line 238, ../sass/layouts/_responsive.scss */
+  #block-menu-menu-top-menu {
+    float: right;
+    width: 75%;
+    margin-right: 0%;
+    margin-left: -75%;
+  }
+
+  /* line 241, ../sass/layouts/_responsive.scss */
+  #block-ottdoc-companion-lang-extra-links {
+    float: right;
+    width: 25%;
+    margin-right: 75%;
+    margin-left: -100%;
+  }
+
+  /* line 244, ../sass/layouts/_responsive.scss */
+  #search-form {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+  }
+
+  /* line 248, ../sass/layouts/_responsive.scss */
+  .center-wrapper .panel-panel {
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  /* line 251, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-left {
+    padding-left: 0;
+    float: right;
+    width: 75%;
+    margin-right: 0%;
+    margin-left: -75%;
+  }
+  /* line 255, ../sass/layouts/_responsive.scss */
+  .center-wrapper .cityott-two-doc-right {
+    padding-right: 0;
+    float: right;
+    width: 25%;
+    margin-right: 75%;
+    margin-left: -100%;
+  }
+
+  /* line 261, ../sass/layouts/_responsive.scss */
+  .cityott-two-doc-bottom .pane-block.left {
+    float: left;
+  }
+  /* line 264, ../sass/layouts/_responsive.scss */
+  .cityott-two-doc-bottom .pane-block.right {
+    float: right;
+    width: 287px;
+  }
+}
+/* Component (SMACSS module) rules */
+/**
+ * @file
+ * RTL companion for the modular-styles.css file.
+ */
+/**
+ * Branding header.
+ */
+/* Wrapping link for logo. */
+/* line 11, ../sass/components/_misc-rtl.scss */
+.header__logo {
+  float: right;
+}
+
+/* The secondary menu (login, etc.) */
+/* line 16, ../sass/components/_misc-rtl.scss */
+.header__secondary-menu {
+  float: left;
+}
+
+/**
+ * Navigation bar.
+ */
+/* Main menu and secondary menu links and menu block links. */
+/* line 27, ../sass/components/_misc-rtl.scss */
+#navigation .links,
+#navigation .menu {
+  text-align: right;
+}
+/* line 30, ../sass/components/_misc-rtl.scss */
+#navigation .links li,
+#navigation .menu li {
+  /* A simple method to get navigation links to appear in one line. */
+  float: right;
+  padding: 0 0 0 10px;
+}
+
+/**
+ * Messages.
+ */
+/* line 41, ../sass/components/_misc-rtl.scss */
+.messages, .messages--status, .messages--warning, .messages--error {
+  padding: 10px 50px 10px 10px;
+  background-position: 99% 8px;
+}
+
+/**
+ * Tabs.
+ */
+/* line 58, ../sass/components/_misc-rtl.scss */
+.tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
+.tabs-secondary__tab.is-active {
+  float: right;
+}
+
+/**
+ * Inline styles.
+ */
+/* List of links */
+/* line 77, ../sass/components/_misc-rtl.scss */
+.inline li {
+  /* Bug in Safari causes display: inline to fail. */
+  display: inline-block;
+  padding: 0 0 0 1em;
+}
+
+/* The inline field label used by the Fences.module */
+/* line 84, ../sass/components/_misc-rtl.scss */
+span.field-label {
+  padding: 0 0 0 1em;
+}
+
+/**
+ * "More" links.
+ */
+/* line 91, ../sass/components/_misc-rtl.scss */
+.more-link {
+  text-align: left;
+}
+
+/* line 94, ../sass/components/_misc-rtl.scss */
+.more-help-link {
+  text-align: left;
+}
+
+/* line 97, ../sass/components/_misc-rtl.scss */
+.more-help-link a {
+  background-position: 100% 50%;
+  padding: 1px 20px 1px 0;
+}
+
+/**
+ * Menus.
+ */
+/* line 105, ../sass/components/_misc-rtl.scss */
+.menu__item.is-collapsed {
+  list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
+}
+
+/**
+ * Comments.
+ */
+/* Nested comments are indented. */
+/* line 117, ../sass/components/_misc-rtl.scss */
+.indented {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+/**
+ * Forms.
+ */
+/* Drupal's default login form block */
+/* line 127, ../sass/components/_misc-rtl.scss */
+#user-login-form {
+  text-align: right;
+}
+
+/* line 132, ../sass/components/_misc-rtl.scss */
+html.js #user-login-form li.openid-link,
+#user-login-form li.openid-link {
+  /* Un-do some of the padding on the ul list. */
+  margin-left: 0;
+  margin-right: -20px;
+}
+
+/*
+ * Drupal admin tables.
+ */
+/* line 142, ../sass/components/_misc-rtl.scss */
+form th {
+  text-align: right;
+  padding-left: 1em;
+  padding-right: 0;
+}
+
+/**
+ * Collapsible fieldsets.
+ *
+ * @see collapse.js
+ */
+/* line 155, ../sass/components/_misc-rtl.scss */
+html.js .collapsible .fieldset-legend {
+  background-position: 98% 75%;
+  padding-left: 0;
+  padding-right: 15px;
+}
+/* line 160, ../sass/components/_misc-rtl.scss */
+html.js .collapsed .fieldset-legend {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
+  background-position: 98% 50%;
+}
+
+/* SMACSS theme rules */
+/* @import "theme-A-rtl"; */
+/* @import "theme-B-rtl"; */

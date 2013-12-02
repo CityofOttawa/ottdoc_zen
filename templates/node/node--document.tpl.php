@@ -43,15 +43,9 @@
       // Check each document to see if there are any archived.
       foreach ($content['field_document']['#items'] as $item) {
         $file = file_load($item['fid']);
-<<<<<<< HEAD
         $field = field_get_items('file', $file, 'field_accessible_status');
         $output = field_view_value('file', $file, 'field_accessible_status', $field[0]);
         if (isset($output['#title']) && $output['#title'] == 'Archive exempt') {
-=======
-        $field = field_get_items('file', $file, 'field_file_archived');
-        $output = field_view_value('file', $file, 'field_file_archived', $field[0]);
-        if (isset($output['#markup']) && $output['#markup'] == 'Yes') {
->>>>>>> a01dd91832dc74d9ba16d44975a697deec11a655
           $archived = TRUE;
         }
       }
