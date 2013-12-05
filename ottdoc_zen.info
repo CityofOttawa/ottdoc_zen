@@ -100,8 +100,6 @@ regions[bottom]         = Page bottom
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
 
-
-
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the
 ; admin/appearance config page. This is useful for suppressing check boxes
@@ -109,6 +107,7 @@ regions[page_bottom]    = Page bottom
 ; entry for it below. See the Drupal 7 Theme Guide for more info:
 ; https://drupal.org/node/171205#features
 
+features[] = logo
 features[] = name
 features[] = node_user_picture
 features[] = comment_user_picture
