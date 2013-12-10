@@ -5,7 +5,7 @@
 #top-logo {
   width: 150px;
   padding: .5em;
-  margin: 1em 0 0;
+  margin: .5em 0 0;
 }
 
 #navigation {
@@ -28,7 +28,6 @@
 
 #header {
   @media all and (min-width: 22.5em) { //360px
-
     display: block;
     position: absolute;
     top: -50px;
@@ -36,7 +35,10 @@
   }
   #block-system-main-menu, 
   #block-locale-language-content {
+    //float: right;
+    @media all and (min-width: 22.5em) { //360px
     float: right;
+    }
   }
   
   #block-system-main-menu{

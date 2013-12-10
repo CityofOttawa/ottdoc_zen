@@ -3,11 +3,11 @@
 /***************************/
 
 .block-field-search{
-  padding: 1em;
+  padding: .6em .7em; //search form padding
   background-color: #ccc;
   border: 1px solid #a9a9a9;
   @include border-radius(3px);
-  margin: 1em 0;
+  margin: 1.2em 0;
   label{
     @include element-invisible;
   }
@@ -17,17 +17,22 @@
     @include border-radius(3px);
     @include border-box;
     @include box-shadow(inset 1px 1px 2px  rgba(0,0,0,.1));
-    padding: .5em .5em .4em;
+    padding: .8em 3em .9em .5em; // offsets the input so no text goes behind magnifying glass(submit button)
     border: 1px solid #a9a9a9;
     @include rem-fallback(font-size, .875rem);
   }
   
   input[type="submit"]{
     @include hide-text;
-    padding: 0;
-    @include border-box;
+    padding: 11px 0;
+    width: 50px;
     position: absolute; 
-    top: 1em;
-    right: 1em;
+    top: .7em;
+    right: .7em; // should match padding on search form
+    
+    border: 0;
+    background: transparent url('../images/search.png') no-repeat center center;
+    background-size: 26px;
+    
   }
 }
