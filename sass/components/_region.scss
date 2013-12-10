@@ -1,0 +1,127 @@
+/***************************/
+/********* Region **********/
+/***************************/
+
+#top-logo {
+  width: 30%;
+  max-width: 150px;
+  padding: .5em;
+}
+
+#header {
+  display: none;
+  @media all and (min-width: 900px) {
+    display: block;
+  }
+  #block-system-main-menu, 
+  #block-locale-language-content {
+    float: right;
+  }
+  #name-and-slogan {
+    @include element-invisible;
+  }
+  .header__name-and-slogan,
+  .header__region {
+    float: none;
+    ul.menu, 
+    ul.language-switcher-locale-url{
+      margin: auto 0; 
+      li {
+        margin: 1em 0 0;
+        padding: 0;
+        display: inline-block;
+        list-style: none;
+        &:after{
+          color: $black;
+          padding: 0 2em 0 2.2em;
+          margin: 0;
+         content: "|"; 
+        }
+        &:last-child {
+          &:after{
+            content: "";
+            padding: 0;
+          }
+        }
+        a {
+          color: $black;
+          text-decoration: none;
+          @include ease-all;
+          border-bottom: 1px solid transparent;
+          
+          &:hover, &:focus {
+            border-bottom: 2px solid $black;
+          }//hover, focus
+        }//a
+      }//li
+    }// ul
+    
+    ul.language-switcher-locale-url{
+      margin-left: 3rem;
+      li {
+       &:after{
+         padding: 0 1em 0 1.2em;
+       } 
+      }
+    }// ul
+
+  }//header-region
+  @include clearfix;
+}// #header
+
+
+
+#content {
+
+}
+
+#footer {
+  #block-menu-menu-footer-menu {
+    @include clearfix;
+    margin-bottom: 0;
+  }
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-size: .8em;
+  color: white;
+  background-color: $footer;
+  text-align: center;
+  a{
+    color: #fff;
+    text-decoration: none;
+    @include ease-all;
+    padding-bottom: .1em;
+    border-bottom: 1px solid transparent;
+    
+    &:hover, &:focus {
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+  p{
+    margin: 0;
+  }
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      &:after{
+        color: darken($light-grey, 40%);
+        padding: 1em;
+       content: "|"; 
+      }
+      &:last-child {
+        &:after{
+          content: "";
+          padding: 0;
+        }
+      }
+      a{
+        color: #fff;
+      }
+    }
+  }
+}

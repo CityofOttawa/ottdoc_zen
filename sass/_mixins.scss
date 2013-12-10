@@ -4,6 +4,25 @@
 // Define the custom mixins for your project here.
 // http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
 
+@mixin ease-all{
+    @include transition-property(all);
+    @include transition-duration(250ms);
+    @include transition-timing-function(ease-in-out);
+}
+
+@mixin ease-color{
+    @include transition-property(color);
+    @include transition-duration(250ms);
+    @include transition-timing-function(ease-in-out);
+}
+
+
+
+
+
+
+
+
 // Makes an element visually hidden, but accessible.
 // @see http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin element-invisible {
@@ -16,6 +35,7 @@
   }
   clip: rect(1px, 1px, 1px, 1px);
 }
+
 
 // Turns off the element-invisible effect.
 @mixin element-invisible-off {
