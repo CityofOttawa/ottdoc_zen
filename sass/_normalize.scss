@@ -169,6 +169,7 @@ a:hover {
 p,
 pre {
   margin: rhythm(1) 0;
+  @include rem-fallback(font-size, .875); // 14px
 }
 blockquote {
   /* Also indent the quote on both sides. */
@@ -191,6 +192,8 @@ h2 {
   @include adjust-font-size-to( $h2-font-size );
   @include leader(1, $h2-font-size);
   @include trailer(1, $h2-font-size);
+  color: $primary;
+  line-height: 1.3;
 }
 h3 {
   @include adjust-font-size-to( $h3-font-size );

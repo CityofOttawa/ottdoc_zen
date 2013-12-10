@@ -1,0 +1,31 @@
+/***************************/
+/********* Panels **********/
+/***************************/
+.front{
+  .panel-2col-bricks{
+    .center-wrapper{
+      .panel-col-first{
+        width: 100%;
+      }
+      .panel-col-last{
+        width: 100%; 
+      }
+      @media only screen and (min-width: 35em){
+        .panel-col-first{
+          width: 50%;
+        }
+        .panel-col-last{
+          width: 50%; 
+        }
+      }
+      @media only screen and (min-width: 55em){
+        .panel-col-first{
+          width: 65%;
+        }
+        .panel-col-last{
+          width: 35%; 
+        }
+      }
+    }//wrapper
+  }//panel-2col-bricks
+}//front

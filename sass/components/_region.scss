@@ -1,20 +1,34 @@
 /***************************/
-/********* Region **********/
+/********* Regions **********/
 /***************************/
 
 #top-logo {
-  width: 30%;
-  max-width: 150px;
+  width: 150px;
   padding: .5em;
+  margin: 1em 0 0;
 }
 
-#page{
+#navigation {
+  /* Move the navbar up inside #main's padding. */
+  position: absolute;
+  top: 0;
+  height: 6em;
+  width: 100%;
+}
+
+#main {
+  /* Move all the children of #main down to make room. */
+  padding-top: 6em;
   position: relative;
 }
 
+#page{
+  position: relative; //make the position context of #header
+}
+
 #header {
-  display: none;
-  @media all and (min-width: 60em) {
+  @media all and (min-width: 22.5em) { //360px
+
     display: block;
     position: absolute;
     top: -50px;
@@ -23,6 +37,13 @@
   #block-system-main-menu, 
   #block-locale-language-content {
     float: right;
+  }
+  
+  #block-system-main-menu{
+    display: none;
+    @media all and (min-width: 60em) { //960px
+    display: block;
+    }
   }
   #name-and-slogan {
     @include element-invisible;
@@ -65,7 +86,7 @@
     
     ul.language-switcher-locale-url{
       margin-left: 3rem;
-      @media only screen and (min-width:70em){
+      @media only screen and (min-width:70em){ //1120px
         margin-left: 9rem;
       }
       li {

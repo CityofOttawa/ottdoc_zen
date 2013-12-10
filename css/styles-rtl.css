@@ -3,6 +3,12 @@
  * RTL companion for the styles.scss file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
+/* REM Fallback ( see http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/ ) 
+
+write as follows in scss: 
+@include rem-fallback(margin, 10, 20, 30, 40);
+
+*/
 /* HTML element (SMACSS base) rules */
 /**
  * @file
