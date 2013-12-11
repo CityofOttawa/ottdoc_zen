@@ -2032,7 +2032,7 @@ tr.selected td {
 /***************************/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\000035}}
 .block-field-search {
-  padding: .6em .7em;
+  padding: .7em;
   background-color: #ccc;
   border: 1px solid #a9a9a9;
   -webkit-border-radius: 3px;
@@ -2041,8 +2041,9 @@ tr.selected td {
   -o-border-radius: 3px;
   border-radius: 3px;
   margin: 1.2em 0;
+  position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\0000312}}
 .block-field-search label {
   position: absolute !important;
   height: 1px;
@@ -2050,7 +2051,7 @@ tr.selected td {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\0000316}}
 .block-field-search input[type="search"] {
   width: 100%;
   -webkit-border-radius: 3px;
@@ -2069,7 +2070,7 @@ tr.selected td {
   font-size: 14px;
   font-size: 0.875rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\0000325}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_blocks\.scss}line{font-family:\0000326}}
 .block-field-search input[type="submit"] {
   text-indent: 100%;
   white-space: nowrap;

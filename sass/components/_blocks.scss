@@ -3,11 +3,12 @@
 /***************************/
 
 .block-field-search{
-  padding: .6em .7em; //search form padding
+  padding: .7em; //search form padding
   background-color: #ccc;
   border: 1px solid #a9a9a9;
   @include border-radius(3px);
   margin: 1.2em 0;
+  position: relative;
   label{
     @include element-invisible;
   }
