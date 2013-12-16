@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-7c54b2fce6611ff3781208c8fd96056a5019b171
+24096887df86464726eccec9fa5d92685d5d8f32
 o:Sass::Tree::RootNode
-:@template"Ü>/**
+:@template"Û>/**
  * @file
  * SMACSS Modules
  *
@@ -443,7 +443,7 @@ span.field-label {
 .pager {
   clear: both;
   padding: 0;
-  text-align: center;
+  text-align: right;
 }
 %pager__item {
   display: inline;
@@ -1467,7 +1467,8 @@ righto;
 [ ;["
 clear;o;;	@;;;"	botho;;iº;;;	@;i ;
 [ ;["padding;o;;	@;;;"0o;;i»;;;	@;i ;
-[ ;["text-align;o;;	@;;;"center;[".pager;o;;" ;i¸;[o;;[o;
+[ ;["text-align;o;;	@;;;"
+right;[".pager;o;;" ;i¸;[o;;[o;
 ;@…
 ;i¸;[o;$;@…
 ;i¸;["

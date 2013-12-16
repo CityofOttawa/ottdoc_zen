@@ -1,0 +1,50 @@
+.pane-ottdoc-listing{
+  h2.pane-title{
+    color: $dark-grey;
+    @include rem-fallback(font-size, 1.25); //20px
+  }
+}
+
+.view-ottdoc-listing{
+  @include rem-fallback(font-size, 0.875); //14px
+  
+  .views-row{
+    padding: .5em 1em;
+    border-top: 1px solid $med-grey;
+    .download-link{
+      float: right;
+      @include opacity(0);
+      @include ease-all;
+      @include transition-property(opacity);
+      @include transition-duration(100ms);
+    }
+    &:hover{
+       .download-link{
+          @include opacity(1);
+        }
+    }
+  }
+  .views-row.views-row-last{
+    border-bottom: 1px solid $med-grey;
+  }
+
+  .download-link{
+    display: inline-block;
+    a{
+      color: #fff;
+      @include border-radius(3px);
+      padding: .2em .5em .2em 2em;
+      margin-left: 1em;
+      background: #777 url(../images/download.png) no-repeat .5em center;
+      background-size: 15px;
+      @include ease-all;
+      &:hover{
+        background-color: darken(#777, 15%);
+        text-decoration: none;
+      }
+    }
+  }
+  
+
+   
+}

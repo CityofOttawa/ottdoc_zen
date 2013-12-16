@@ -29,3 +29,9 @@
     }//wrapper
   }//panel-2col-bricks
 }//front
+
+.pane-node-content{
+  .node-document{
+    @include rem-fallback(font-size, 0.875); //14px
+  }
+}
