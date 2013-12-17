@@ -136,6 +136,29 @@
 
 }
 
+.footer-top{
+  background-color: #fff;
+  padding: 1em 10px;
+  margin-top: 1em;
+  border-top: 4px double $med-grey;
+  
+}
+
+.region-footer-top-first, 
+.region-footer-top-second{
+  @media all and (min-width: 60em) { //960px
+    width: 47.5%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+.region-footer-top-second{
+  @media all and (min-width: 60em) { //960px
+    float: right;
+  }
+}
+
 #footer {
   #block-menu-menu-footer-menu {
     @include clearfix;
