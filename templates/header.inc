@@ -15,7 +15,7 @@ global $language;
       <?php endif; ?>
 
       <?php print render($page['top']); ?>
-    </div>
+    </div>    
   </div>
 <?php endif; ?>
 <div id="page">
@@ -51,4 +51,9 @@ global $language;
       <?php endif; ?>
       <?php print render($page['header']); ?>
     </header>
+    <!-- Page heading custom -->
+    <div class="header-extended">
+      <h2>Documents</h2>
+    </div>
+    
   <?php endif; ?>

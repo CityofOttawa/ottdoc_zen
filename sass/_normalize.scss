@@ -182,13 +182,15 @@ blockquote {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-h1 {
+h1, 
+.header-extended h2{
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
   @include adjust-font-size-to( $h1-font-size );
 
   /* Set 1 unit of vertical rhythm on the top and bottom margins. */
   @include leader(1, $h1-font-size);
   @include trailer(1, $h1-font-size);
+  color: #000;
 }
 h2 {
   @include adjust-font-size-to( $h2-font-size );

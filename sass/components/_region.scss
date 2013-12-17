@@ -26,7 +26,7 @@
   position: relative; //make the position context of #header
 }
 
-#header {
+#header {  
   @media all and (min-width: 22.5em) { //360px
     display: block;
     position: absolute;
@@ -35,7 +35,6 @@
   }
   #block-system-main-menu, 
   #block-locale-language-content {
-    //float: right;
     @media all and (min-width: 22.5em) { //360px
     float: right;
     }
@@ -92,7 +91,7 @@
     ul.language-switcher-locale-url{
       margin-left: 0;
       padding-left: 0;
-
+      float: right;
       li {
        &:after{
          padding: 0;
@@ -121,8 +120,16 @@
 
   }//header-region
   @include clearfix;
+  overflow: visible;
+  
 }// #header
 
+.header-extended{
+  padding-left: 10px;
+  h2{
+    margin: .5em 0 0;
+  }
+}
 
 
 #content {
