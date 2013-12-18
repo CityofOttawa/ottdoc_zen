@@ -220,7 +220,7 @@ h2 {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003202}}
-h3 {
+h3, .pane-ottdoc-listing-document-listing h2 {
   font-size: 1.17em;
   line-height: 1.28205em;
   margin-top: 1.28205em;
@@ -2097,10 +2097,68 @@ tr.selected td {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000335}}
+.node-type-document .panel-display.panel-2col .panel-col-first {
+  width: 100%;
+  float: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000339}}
+.node-type-document .panel-display.panel-2col .panel-col-last {
+  width: 100%;
+  float: none;
+}
+@media only screen and (min-width: 55em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000344}}
+  .node-type-document .panel-display.panel-2col .panel-col-first {
+    width: 65%;
+    float: left;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000348}}
+  .node-type-document .panel-display.panel-2col .panel-col-last {
+    width: 30%;
+    float: right;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000358}}
 .pane-node-content .node-document {
   font-size: 14px;
   font-size: 0.875rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000363}}
+.pane-ottdoc-listing-document-highlights {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000365}}
+.pane-ottdoc-listing-document-highlights h2 {
+  color: #fff;
+  background-color: #004292;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: .5em 1em;
+  margin: 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -ms-border-radius: 4px 4px 0 0;
+  -o-border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #004292;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000376}}
+.pane-ottdoc-listing-document-highlights .view-ottdoc-listing .views-row, .pane-ottdoc-listing-document-highlights .view-ottdoc-listing .views-row.views-row-last {
+  border: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_panels\.scss}line{font-family:\0000381}}
+.pane-ottdoc-listing-document-highlights .view-content {
+  padding: 1em .4em;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 
 /***************************/
@@ -2168,17 +2226,23 @@ tr.selected td {
   font-size: 1.25rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\000038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\000037}}
+.pane-ottdoc-listing-document-listing h2 {
+  color: #000;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000313}}
 .view-ottdoc-listing {
   font-size: 14px;
   font-size: 0.875rem;
+  margin-bottom: 2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000316}}
 .view-ottdoc-listing .views-row {
   padding: .5em 1em;
   border-top: 1px solid #dddddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000319}}
 .view-ottdoc-listing .views-row .download-link {
   float: right;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -2204,20 +2268,20 @@ tr.selected td {
   -o-transition-duration: 100ms;
   transition-duration: 100ms;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000327}}
 .view-ottdoc-listing .views-row:hover .download-link {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000332}}
 .view-ottdoc-listing .views-row.views-row-last {
   border-bottom: 1px solid #dddddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000336}}
 .view-ottdoc-listing .download-link {
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000338}}
 .view-ottdoc-listing .download-link a {
   color: #fff;
   -webkit-border-radius: 3px;
@@ -2242,7 +2306,7 @@ tr.selected td {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_views\.scss}line{font-family:\0000346}}
 .view-ottdoc-listing .download-link a:hover {
   background-color: #515151;
   text-decoration: none;

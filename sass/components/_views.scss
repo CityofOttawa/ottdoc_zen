@@ -4,10 +4,15 @@
     @include rem-fallback(font-size, 1.25); //20px
   }
 }
+.pane-ottdoc-listing-document-listing h2{
+  @extend h3; //styles like h3's
+  color: #000;
+}
+ 
 
 .view-ottdoc-listing{
   @include rem-fallback(font-size, 0.875); //14px
-  
+  margin-bottom: 2em;
   .views-row{
     padding: .5em 1em;
     border-top: 1px solid $med-grey;
