@@ -496,6 +496,8 @@ input[type="radio"] {
   }
 }
 
+
+
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
@@ -515,6 +517,25 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #777;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #777;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #777;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #777;
+}
+
+input[type="search"]::-webkit-input-placeholder, 
+input[type="search"]:-moz-placeholder, 
+input[type="search"]::-moz-placeholder,
+input[type="search"]:-ms-input-placeholder{
+  color: #777;
+}
 /* Remove inner padding and border in Firefox 4+. */
 button::-moz-focus-inner,
 input::-moz-focus-inner {

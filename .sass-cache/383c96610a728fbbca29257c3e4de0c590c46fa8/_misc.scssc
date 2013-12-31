@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-24096887df86464726eccec9fa5d92685d5d8f32
+27e73dc72b42614c878c106d95cf2381ab77c8de
 o:Sass::Tree::RootNode
-:@template"Û>/**
+:@template"©?/**
  * @file
  * SMACSS Modules
  *
@@ -813,8 +813,22 @@ tr.selected td {
 .node-image{
   padding-top: 2em;
 }
+
+
+/* IE8 Styles */
+
+.lt-ie9{
+  .block-field-search input[type="submit"]{
+    text-indent: -9999px;
+    background-image: url('../images/ie8-search.png');
+  }
+  
+  #main #content{
+    margin-top: 2em;
+  }
+}
 :@has_childrenT:
-@linei:@options{ :@children[žo:Sass::Tree::CommentNode
+@linei:@options{ :@children[ o:Sass::Tree::CommentNode
 ;i;	@:
 @type:normal;
 [ :@value["¶/**
@@ -1994,4 +2008,18 @@ color;o;;	@;;;"	#999o;;iø;;;	@;i ;
 ;@<;i;[o;$;@<;i;["progress; o;!;"{ ;#0o;;T;i*;	@;i ;
 [o;;i+;;;	@;i ;
 [ ;["padding-top;o;;	@;;;"2em;[".node-image;o;;" ;i*;[o;;[o;
-;@R;i*;[o;$;@R;i*;["node-image; o;!;"{ ;#0
+;@R;i*;[o;$;@R;i*;["node-image; o;!;"{ ;#0o;
+;i/;	@;;;
+[ ;["/* IE8 Styles */o;;T;i1;	@;i ;
+[o;;T;i2;	@;i ;
+[o;;i3;;;	@;i ;
+[ ;["text-indent;o;;	@;;;"-9999pxo;;i4;;;	@;i ;
+[ ;["background-image;o;8;i4;	@;&0;"url;'{ ;([o;	;i4;	@;;=;"../images/ie8-search.png;["-.block-field-search input[type="submit"];o;;" ;i2;[o;;[o;
+;@x;i2;[o;$;@x;i2;["block-field-search; o;!;"{ ;#0o;
+;@x;i2;[o;1	;@x;20;i2;["
+inputo:Sass::Selector::Attribute;@x;20;?"=;i2;["	type:@flags0;[""submit"; o;!;"{ ;#0o;;T;i7;	@;i ;
+[o;;i8;;;	@;i ;
+[ ;["margin-top;o;;	@;;;"2em;["#main #content;o;;" ;i7;[o;;[o;
+;@›;i7;[o;;@›;i7;["	main; o;!;"{ ;#0o;
+;@›;i7;[o;;@›;i7;["content; o;!;"{ ;#0;[".lt-ie9;o;;" ;i1;[o;;[o;
+;@°;i1;[o;$;@°;i1;["lt-ie9; o;!;"{ ;#0

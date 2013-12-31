@@ -810,3 +810,17 @@ tr.selected td {
 .node-image{
   padding-top: 2em;
 }
+
+
+/* IE8 Styles */
+
+.lt-ie9{
+  .block-field-search input[type="submit"]{
+    text-indent: -9999px;
+    background-image: url('../images/ie8-search.png');
+  }
+  
+  #main #content{
+    margin-top: 2em;
+  }
+}

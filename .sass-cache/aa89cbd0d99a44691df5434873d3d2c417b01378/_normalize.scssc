@@ -1,7 +1,7 @@
 3.2.10 (Media Mark)
-37268a4fc16b90bac3f62d3575250a0fab098669
+4e3a62f285135d8beb21cb17fbf4ede264068c65
 o:Sass::Tree::RootNode
-:@template"j3/**
+:@template"N5/**
  * @file
  * Normalize.css is intended to be used as an alternative to CSS resets.
  *
@@ -499,6 +499,8 @@ input[type="radio"] {
   }
 }
 
+
+
 /**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
@@ -518,6 +520,25 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #777;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #777;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #777;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #777;
+}
+
+input[type="search"]::-webkit-input-placeholder, 
+input[type="search"]:-moz-placeholder, 
+input[type="search"]::-moz-placeholder,
+input[type="search"]:-ms-input-placeholder{
+  color: #777;
+}
 /* Remove inner padding and border in Firefox 4+. */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -554,7 +575,7 @@ table {
   @include trailer(1);
 }
 :@has_childrenT:
-@linei:@options{ :@children[io:Sass::Tree::CommentNode
+@linei:@options{ :@children[no:Sass::Tree::CommentNode
 ;i;	@:
 @type:normal;
 [ :@value["®/**
@@ -1293,90 +1314,148 @@ inputo;(;@å;0;)"=;iê;["	type;*0;[""checkbox"; o;!;"{ ;#0o;;["
 o;
 ;@å;iê;[o;	;@å;0;iê;["
 inputo;(;@å;0;)"=;iê;["	type;*0;[""radio"; o;!;"{ ;#0o;
-;ió;	@;;;
+;iõ;	@;;;
 [ ;["½/**
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
- */o;;T;iø;	@;i ;
-[	o;;iù;;;	@;i ;
+ */o;;T;iú;	@;i ;
+[	o;;iû;;;	@;i ;
 [ ;["-webkit-appearance;o;;	@;;;"textfieldo;
-;iù;	@;;;
-[ ;["/* 1 */o;7;iú;	@;
-[ ;80;"box-sizing;9{ ;:[o;	;iú;	@;;;"content-boxo;
-;iú;	@;;;
-[ ;["/* 2 */;["input[type="search"];o;;" ;iø;[o;;[o;
-;@$	;iø;[o;	;@$	;0;iø;["
-inputo;(;@$	;0;)"=;iø;["	type;*0;[""search"; o;!;"{ ;#0o;
-;iý;	@;;;
+;iû;	@;;;
+[ ;["/* 1 */o;7;iü;	@;
+[ ;80;"box-sizing;9{ ;:[o;	;iü;	@;;;"content-boxo;
+;iü;	@;;;
+[ ;["/* 2 */;["input[type="search"];o;;" ;iú;[o;;[o;
+;@$	;iú;[o;	;@$	;0;iú;["
+inputo;(;@$	;0;)"=;iú;["	type;*0;[""search"; o;!;"{ ;#0o;
+;iÿ;	@;;;
 [ ;["`/**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
- */o;;T;i;	@;i ;
-[o;;i;;;	@;i ;
+ */o;;T;i;	@;i ;
+[o;;i;;;	@;i ;
 [ ;["-webkit-appearance;o;;	@;;;"	none;["hinput[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration;o;;" ;i;[o;;[o;
-;@D	;i;[o;	;@D	;0;i;["
-inputo;(;@D	;0;)"=;i;["	type;*0;[""search"o;%
-;@D	;&0;i;:element;["!-webkit-search-cancel-button; o;!;"{ ;#0o;;["
+input[type="search"]::-webkit-search-decoration;o;;" ;i;[o;;[o;
+;@D	;i;[o;	;@D	;0;i;["
+inputo;(;@D	;0;)"=;i;["	type;*0;[""search"o;%
+;@D	;&0;i;:element;["!-webkit-search-cancel-button; o;!;"{ ;#0o;;["
 o;
-;@D	;i;[o;	;@D	;0;i;["
-inputo;(;@D	;0;)"=;i;["	type;*0;[""search"o;%
-;@D	;&0;i;;@;["-webkit-search-decoration; o;!;"{ ;#0o;
-;i;	@;;;
-[ ;["9/* Remove inner padding and border in Firefox 4+. */o;;T;i;	@;i ;
-[o;;i	;;;	@;i ;
-[ ;["border;o;;	@;;;"0o;;i
-;;;	@;i ;
+;@D	;i;[o;	;@D	;0;i;["
+inputo;(;@D	;0;)"=;i;["	type;*0;[""search"o;%
+;@D	;&0;i;;@;["-webkit-search-decoration; o;!;"{ ;#0o;;T;i;	@;i ;
+[o;
+;i;	@;;;
+[ ;["/* WebKit browsers */o;;i	;;;	@;i ;
+[ ;["
+color;o;;	@;;;"	#777;[" ::-webkit-input-placeholder;o;;" ;i;[o;;[o;
+;@z	;i;[o;%
+;@z	;&0;i;;@;["-webkit-input-placeholder; o;!;"{ ;#0o;;T;i;	@;i ;
+[o;
+;i;	@;;;
+[ ;[""/* Mozilla Firefox 4 to 18 */o;;i;;;	@;i ;
+[ ;["
+color;o;;	@;;;"	#777;[":-moz-placeholder;o;;" ;i;[o;;[o;
+;@”	;i;[o;%
+;@”	;&0;i;;';["-moz-placeholder; o;!;"{ ;#0o;;T;i;	@;i ;
+[o;
+;i;	@;;;
+[ ;["/* Mozilla Firefox 19+ */o;;i;;;	@;i ;
+[ ;["
+color;o;;	@;;;"	#777;["::-moz-placeholder;o;;" ;i;[o;;[o;
+;@®	;i;[o;%
+;@®	;&0;i;;@;["-moz-placeholder; o;!;"{ ;#0o;;T;i;	@;i ;
+[o;
+;i;	@;;;
+[ ;[" /* Internet Explorer 10+ */o;;i;;;	@;i ;
+[ ;["
+color;o;;	@;;;"	#777;[":-ms-input-placeholder;o;;" ;i;[o;;[o;
+;@È	;i;[o;%
+;@È	;&0;i;;';["-ms-input-placeholder; o;!;"{ ;#0o;;T;i;	@;i ;
+[o;;i;;;	@;i ;
+[ ;["
+color;o;;	@;;;"	#777;["¬input[type="search"]::-webkit-input-placeholder, 
+input[type="search"]:-moz-placeholder, 
+input[type="search"]::-moz-placeholder,
+input[type="search"]:-ms-input-placeholder;o;;" ;i;[	o;;[o;
+;@Þ	;i;[o;	;@Þ	;0;i;["
+inputo;(;@Þ	;0;)"=;i;["	type;*0;[""search"o;%
+;@Þ	;&0;i;;@;["-webkit-input-placeholder; o;!;"{ ;#0o;;["
+o;
+;@Þ	;i;[o;	;@Þ	;0;i;["
+inputo;(;@Þ	;0;)"=;i;["	type;*0;[""search"o;%
+;@Þ	;&0;i;;';["-moz-placeholder; o;!;"{ ;#0o;;["
+o;
+;@Þ	;i;[o;	;@Þ	;0;i;["
+inputo;(;@Þ	;0;)"=;i;["	type;*0;[""search"o;%
+;@Þ	;&0;i;;@;["-moz-placeholder; o;!;"{ ;#0o;;["
+o;
+;@Þ	;i;[o;	;@Þ	;0;i;["
+inputo;(;@Þ	;0;)"=;i;["	type;*0;[""search"o;%
+;@Þ	;&0;i;;';["-ms-input-placeholder; o;!;"{ ;#0o;
+;i;	@;;;
+[ ;["9/* Remove inner padding and border in Firefox 4+. */o;;T;i;	@;i ;
+[o;;i;;;	@;i ;
+[ ;["border;o;;	@;;;"0o;;i;;;	@;i ;
 [ ;["padding;o;;	@;;;"0;["6button::-moz-focus-inner,
-input::-moz-focus-inner;o;;" ;i;[o;;[o;
-;@€	;i;[o;	;@€	;0;i;["buttono;%
-;@€	;&0;i;;@;["-moz-focus-inner; o;!;"{ ;#0o;;["
+input::-moz-focus-inner;o;;" ;i;[o;;[o;
+;@@
+;i;[o;	;@@
+;0;i;["buttono;%
+;@@
+;&0;i;;@;["-moz-focus-inner; o;!;"{ ;#0o;;["
 o;
-;@€	;i;[o;	;@€	;0;i;["
+;@@
+;i;[o;	;@@
+;0;i;["
 inputo;%
-;@€	;&0;i;;@;["-moz-focus-inner; o;!;"{ ;#0o;
-;i;	@;;;
+;@@
+;&0;i;;@;["-moz-focus-inner; o;!;"{ ;#0o;
+;i";	@;;;
 [ ;["x/**
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
- */o;;T;i;	@;i ;
-[	o;;i;;;	@;i ;
+ */o;;T;i&;	@;i ;
+[	o;;i';;;	@;i ;
 [ ;["overflow;o;;	@;;;"	autoo;
-;i;	@;;;
-[ ;["/* 1 */o;;i;;;	@;i ;
+;i';	@;;;
+[ ;["/* 1 */o;;i(;;;	@;i ;
 [ ;["vertical-align;o;;	@;;;"topo;
-;i;	@;;;
-[ ;["/* 2 */;["textarea;o;;" ;i;[o;;[o;
-;@¸	;i;[o;	;@¸	;0;i;["textarea; o;!;"{ ;#0o;
-;i;	@;;;
-[ ;["$/* Drupal-style form labels. */o;;T;i;	@;i ;
-[o;;i;;;	@;i ;
+;i(;	@;;;
+[ ;["/* 2 */;["textarea;o;;" ;i&;[o;;[o;
+;@x
+;i&;[o;	;@x
+;0;i&;["textarea; o;!;"{ ;#0o;
+;i+;	@;;;
+[ ;["$/* Drupal-style form labels. */o;;T;i,;	@;i ;
+[o;;i-;;;	@;i ;
 [ ;["display;o;;	@;;;"
-blocko;;i;;;	@;i ;
+blocko;;i.;;;	@;i ;
 [ ;["font-weight;o;;	@;;;"	bold;["
-label;o;;" ;i;[o;;[o;
-;@Ø	;i;[o;	;@Ø	;0;i;["
+label;o;;" ;i,;[o;;[o;
+;@˜
+;i,;[o;	;@˜
+;0;i,;["
 label; o;!;"{ ;#0o;
-;i;	@;;;
+;i1;	@;;;
 [ ;["/**
  * Tables
- */o;;T;i;	@;i ;
+ */o;;T;i4;	@;i ;
 [o;
-;i ;	@;;;
-[ ;["3/* Remove most spacing between table cells. */o;;i!;;;	@;i ;
-[ ;["border-collapse;o;;	@;;;"collapseo;;i";;;	@;i ;
+;i5;	@;;;
+[ ;["3/* Remove most spacing between table cells. */o;;i6;;;	@;i ;
+[ ;["border-collapse;o;;	@;;;"collapseo;;i7;;;	@;i ;
 [ ;["border-spacing;o;;	@;;;"0o;
-;i#;	@;;;
+;i8;	@;;;
 [ ;[")/* Prevent cramped-looking tables */o;
-;i$;	@;;;
+;i9;	@;;;
 [ ;["/* width: 100%; */o;
-;i%;	@;;;
-[ ;["'/* Add vertical rhythm margins. */o;7;i&;	@;
-[ ;80;"leader;9{ ;:[o;0;i&;	@;1@F;2[ ;3"1;io;7;i';	@;
-[ ;80;"trailer;9{ ;:[o;0;i';	@;1@F;2[ ;3"1;i;["
-table;o;;" ;i;[o;;[o;
-;@
-;i;[o;	;@
-;0;i;["
+;i:;	@;;;
+[ ;["'/* Add vertical rhythm margins. */o;7;i;;	@;
+[ ;80;"leader;9{ ;:[o;0;i;;	@;1@F;2[ ;3"1;io;7;i<;	@;
+[ ;80;"trailer;9{ ;:[o;0;i<;	@;1@F;2[ ;3"1;i;["
+table;o;;" ;i4;[o;;[o;
+;@Ø
+;i4;[o;	;@Ø
+;0;i4;["
 table; o;!;"{ ;#0

@@ -541,7 +541,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003504}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003506}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -555,14 +555,46 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003514}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003516}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* Remove inner padding and border in Firefox 4+. */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003520}}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #777;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003523}}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #777;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003526}}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #777;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003529}}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #777;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003536}}
+input[type="search"]::-webkit-input-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="search"]:-ms-input-placeholder {
+  color: #777;
+}
+
+/* Remove inner padding and border in Firefox 4+. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003541}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -573,7 +605,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003529}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003550}}
 textarea {
   overflow: auto;
   /* 1 */
@@ -582,7 +614,7 @@ textarea {
 }
 
 /* Drupal-style form labels. */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003556}}
 label {
   display: block;
   font-weight: bold;
@@ -591,7 +623,7 @@ label {
 /**
  * Tables
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003543}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/_normalize\.scss}line{font-family:\00003564}}
 table {
   /* Remove most spacing between table cells. */
   border-collapse: collapse;
@@ -1783,6 +1815,17 @@ tr.selected td {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_misc\.scss}line{font-family:\00003810}}
 .node-image {
   padding-top: 2em;
+}
+
+/* IE8 Styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_misc\.scss}line{font-family:\00003818}}
+.lt-ie9 .block-field-search input[type="submit"] {
+  text-indent: -9999px;
+  background-image: url("../images/ie8-search.png");
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal\/profiles\/ottdoc_profile\/themes\/ottdoc_zen\/sass\/components\/_misc\.scss}line{font-family:\00003823}}
+.lt-ie9 #main #content {
+  margin-top: 2em;
 }
 
 /***************************/
