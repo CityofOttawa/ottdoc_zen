@@ -518,16 +518,16 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #777;
+    color: #777;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #777;
+    color: #777;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #777;
+    color: #777;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #777;
+    color: #777;
 }
 
 input[type="search"]::-webkit-input-placeholder, 
