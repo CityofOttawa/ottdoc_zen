@@ -34,7 +34,8 @@
     right: 0;
   }
   #block-system-main-menu, 
-  #block-locale-language-content {
+  #block-locale-language-content,
+  #block-locale-language {
     @media all and (min-width: 22.5em) { //360px
     float: right;
     }
