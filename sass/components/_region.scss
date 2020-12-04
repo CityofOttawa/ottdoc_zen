@@ -26,8 +26,15 @@
   position: relative; //make the position context of #header
 }
 
-#header {  
-  @media all and (min-width: 22.5em) { //360px
+#header {
+  .region-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  @media all and (min-width: 24em) {
     display: block;
     position: absolute;
     top: -50px;
@@ -36,7 +43,7 @@
   #block-system-main-menu, 
   #block-locale-language-content,
   #block-locale-language {
-    @media all and (min-width: 22.5em) { //360px
+    @media all and (min-width: 24em) {
     float: right;
     }
   }
@@ -75,14 +82,14 @@
     }// ul
     
     ul.menu li{
-      &:after{
+      &:before{
         color: $black;
         padding: 0 2em 0 2.2em;
         margin: 0;
-       content: "|"; 
+        content: "|";
       }
       &:last-child {
-        &:after{
+        &:before{
           content: "";
           padding: 0;
         }
@@ -102,16 +109,14 @@
     }// ul
 
     #block-menu-menu-contact{
-      float: right;
-      margin-left: 3rem;
-       @media only screen and (min-width:70em){ //1120px
-         margin-left: 9rem;
-       }
-      .menu li:after{
+      .menu {
+        padding: 0;
+      }
+      .menu li:before{
         color: $black;
         padding: 0 1em 0 1em;
         margin: 0;
-       content: "|"; 
+       content: "|";
       }
     }
 
