@@ -44,7 +44,7 @@
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
-      <a href="#main-content" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
+      <a href="#" onclick="document.getElementById('base-srch').focus({preventScroll:false});" class="element-invisible element-focusable"><?php print t('Skip to main search.'); ?></a>
     </p>
   <?php endif; ?>
   <?php print $page_top; ?>
