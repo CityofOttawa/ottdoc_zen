@@ -8,7 +8,16 @@
   @extend h3; //styles like h3's
   color: #000;
 }
- 
+
+// Hides the H2 node link in the document list from focus.
+// This link is hidden for sighted users.
+.view-id-entity_list {
+  .views-row {
+    h2.element-invisible {
+      display: none;
+    }
+  }
+}
 
 .view-ottdoc-listing{
   @include rem-fallback(font-size, 0.875); //14px
