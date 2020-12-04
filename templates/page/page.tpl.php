@@ -10,6 +10,31 @@
 include_once(drupal_get_path('theme', 'ottdoc_zen') . '/templates/header.inc');
 ?>
   <div id="main">
+      <?php if ($main_menu || $page['navigation']): ?>
+          <div id="navigation">
+              <?php if ($main_menu): ?>
+                  <nav id="main-menu" role="navigation" tabindex="-1">
+                      <?php
+                      // This code snippet is hard to modify. We recommend turning off the
+                      // "Main menu" on your sub-theme's settings form, deleting this PHP
+                      // code block, and, instead, using the "Menu block" module.
+                      // @see https://drupal.org/project/menu_block
+                      print theme('links__system_main_menu', array(
+                          'links' => $main_menu,
+                          'attributes' => array(
+                              'class' => array('links', 'inline', 'clearfix'),
+                          ),
+                          'heading' => array(
+                              'text' => t('Main menu'),
+                              'level' => 'h2',
+                              'class' => array('element-invisible'),
+                          ),
+                      )); ?>
+                  </nav>
+              <?php endif; ?>
+              <?php print render($page['navigation']); ?>
+          </div>
+      <?php endif; ?>
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -28,32 +53,6 @@ include_once(drupal_get_path('theme', 'ottdoc_zen') . '/templates/header.inc');
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>
-    <?php if ($main_menu || $page['navigation']): ?>
-      <div id="navigation">
-        <?php if ($main_menu): ?>
-          <nav id="main-menu" role="navigation" tabindex="-1">
-            <?php
-            // This code snippet is hard to modify. We recommend turning off the
-            // "Main menu" on your sub-theme's settings form, deleting this PHP
-            // code block, and, instead, using the "Menu block" module.
-            // @see https://drupal.org/project/menu_block
-            print theme('links__system_main_menu', array(
-              'links' => $main_menu,
-              'attributes' => array(
-                'class' => array('links', 'inline', 'clearfix'),
-              ),
-              'heading' => array(
-                'text' => t('Main menu'),
-                'level' => 'h2',
-                'class' => array('element-invisible'),
-              ),
-            )); ?>
-          </nav>
-        <?php endif; ?>
-        <?php print render($page['navigation']); ?>
-      </div>
-    <?php endif; ?>
-
     <?php
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);
